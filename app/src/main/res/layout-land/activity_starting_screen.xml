@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82d6d8"
+    android:padding="16dp"
+    tools:context="com.example.koralzakai.quizapp.StartingScreenActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="casual"
+        android:text="Quiz - Time"
+        android:textColor="@android:color/white"
+        android:textSize="48dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_start_quiz"
+        android:layout_alignEnd="@+id/button_start_quiz"
+        android:fontFamily="casual"
+        android:text="Highscore: 0"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/images"
+        android:layout_below="@+id/text_view_highscore"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonPrograming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/imageButtonMusic"
+            android:layout_marginStart="50dp"
+            app:srcCompat="@drawable/prog" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/imageButtonGeography"
+            android:layout_marginStart="50dp"
+            app:srcCompat="@drawable/music" />
+
+        <ImageButton
+            android:id="@+id/imageButtonGeography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            app:srcCompat="@drawable/geo" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/images"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/Programing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:fontFamily="casual"
+            android:text="Programing"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:fontFamily="casual"
+            android:text="Music"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/Geography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:fontFamily="casual"
+            android:text="Geography"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:text="Start Quiz"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="#ed3660"/>
+
+</LinearLayout>
+</RelativeLayout>

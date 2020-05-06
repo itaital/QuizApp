@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#82d6d8</item>
+        <item name= "android:fontFamily">casual</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/MyAlertDialogTitle</item>
+        <item name="android:background">#EEEE</item>
+        <item name="android:buttonBarButtonStyle"> @style/MyButton </item>
+        <item name="android:fontFamily">casual</item>
+    </style>
+
+    <style name="MyAlertDialogTitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+
+    <style name="MyButton">
+    <item name="android:background">@drawable/pick_diff_background</item>
+    </style>
+
+
+</resources>
